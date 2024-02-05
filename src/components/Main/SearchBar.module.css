@@ -1,0 +1,32 @@
+.main {
+    background-color: wheat;
+    border-radius: 8px;
+    padding: 20px;
+    width: 500px;
+    margin: 60px auto 0;
+    box-shadow: 0 3px 6px rgba(25, 25, 25, 50%);
+    display: flex;
+}
+
+.input {
+    display: block;
+    width: 80%;
+    border: none;
+    background-color: wheat;
+    font-size: 20px;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.button {
+    display: inline-block;
+    border: none;
+    border-radius: 6px;
+    background-color: darkgrey;
+    padding: 12px 20px;
+    font-size: 28px;
+    cursor: pointer;
+    width: 20%;
+}
