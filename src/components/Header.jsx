@@ -2,8 +2,8 @@ import styles from './Header.module.css';
 
 export default function Header() {
     return (
-        <div className={styles.main}>
+        <header className={styles.main}>
             Header
-        </div>
+        </header>
     );
 }

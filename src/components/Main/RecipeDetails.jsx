@@ -1,3 +1,7 @@
 export default function RecipeDetails({recipe}) {
-    {recipe.id}
+    return (
+        <div>
+            {recipe.id}
+        </div>
+    );
 }
