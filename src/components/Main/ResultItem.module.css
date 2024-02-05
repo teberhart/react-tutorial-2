@@ -3,6 +3,8 @@
     background-color: white;
     padding: 10px;
     margin: 20px auto auto;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(25, 25, 25, 0.5);
 }
 
 .button {
