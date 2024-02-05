@@ -6,6 +6,7 @@ import Details from "./Main/Details.jsx";
 
 export default function Main() {
     const [results, setResults] = useState([]);
+    const [details, setDetails] = useState([]);
 
     return (
         <div className={styles.main}>
@@ -13,11 +14,11 @@ export default function Main() {
             <div className={styles.container}>
                 <div className={styles.item}>
                     {
-                        <ResultList recipes={results} />
+                        <ResultList recipes={results} setDetails={setDetails} />
                     }
                 </div>
                 <div className={styles.item}>
-                    <Details/>
+                    <Details details={details} />
                 </div>
             </div>
         </div>

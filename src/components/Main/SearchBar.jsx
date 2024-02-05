@@ -9,7 +9,7 @@ export default function SearchBar({setResults}) {
     async function fetchRecipes (queryString) {
         const ENDPOINT = "https://api.spoonacular.com/recipes/complexSearch";
         const APIKEY = import.meta.env.VITE_SPOONACULAR_API_KEY;
-        const query = `${ENDPOINT}?apiKey=${APIKEY}&query=${queryString}`;
+        const query = `${ENDPOINT}?apiKey=${APIKEY}&query=${queryString}&limitLicense=true`;
 
         const results = await fetch(query);
         const data = await results.json();

@@ -1,8 +1,20 @@
 import styles from './ResultItem.module.css';
 
-export default function ResultItem({item}) {
-    function handleClick(e) {
+export default function ResultItem({item, setDetails}) {
+    async function fetchDetails(id) {
+        const ENDPOINT = "https://api.spoonacular.com/recipes/";
+        const APIKEY = import.meta.env.VITE_SPOONACULAR_API_KEY;
+        const query = `${ENDPOINT}${id}/information?apiKey=${APIKEY}`;
+
+        const results = await fetch(query);
+        return await results.json();
+    }
+
+    async function handleClick(e) {
         e.preventDefault();
+        const details = await fetchDetails(item.id);
+        console.log(details);
+        setDetails(details);
     }
 
     return (

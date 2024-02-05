@@ -1,6 +1,8 @@
 .main {
     background-color: darkgrey;
     height: auto;
+    margin-top: 80px;
+    padding-top: 15px;
 }
 
 .container {
