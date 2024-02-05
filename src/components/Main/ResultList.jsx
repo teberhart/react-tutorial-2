@@ -1,10 +1,10 @@
 import ResultItem from "./ResultItem.jsx";
 
-export default function ResultList({results}) {
+export default function ResultList({recipes}) {
     return (
         <div>
-            {results.map((item) =>
-                <ResultItem item={item} />
+            {recipes.map((recipe)=>
+                <ResultItem key={recipe.id} item={recipe} />
             )}
         </div>
     );

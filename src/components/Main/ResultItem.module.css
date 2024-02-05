@@ -1,0 +1,18 @@
+.card {
+    width: 80%;
+    background-color: white;
+    padding: 10px;
+    margin: 20px auto auto;
+}
+
+.button {
+    display: inline-block;
+    border: none;
+    border-radius: 6px;
+    background-color: wheat;
+    padding: 12px 20px;
+    font-size: 28px;
+    cursor: pointer;
+    width: 20%;
+    margin-top: 10px;
+}

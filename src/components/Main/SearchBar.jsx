@@ -3,7 +3,7 @@ import styles from './SearchBar.module.css';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faSearchengin} from "@fortawesome/free-brands-svg-icons";
 
-export default function SearchBar() {
+export default function SearchBar({setResults}) {
     const [inputValue, setInput] = useState("");
 
     async function fetchRecipes (queryString) {
@@ -13,6 +13,8 @@ export default function SearchBar() {
 
         const results = await fetch(query);
         const data = await results.json();
+
+        await setResults(data.results);
 
         // data looks like
         /*
@@ -42,6 +44,7 @@ export default function SearchBar() {
     return (
         <div className={styles.main}>
             <input
+                name="inputField"
                 className={styles.input}
                 type="text"
                 value={inputValue}

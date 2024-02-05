@@ -1,3 +1,14 @@
 .main {
     background-color: darkgrey;
+    height: auto;
+}
+
+.container {
+    width: 90%;
+    display: flex;
+    text-align: center;
+}
+
+.item {
+    width: 50%;
 }
