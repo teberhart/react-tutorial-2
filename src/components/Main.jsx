@@ -1,9 +1,15 @@
 import styles from './Main.module.css';
+import SearchBar from "./Main/SearchBar.jsx";
+import {useState} from "react";
+import ResultList from "./Main/ResultList.jsx";
 
 export default function Main() {
+    const [results, setResults] = useState([]);
+
     return (
         <div className={styles.main}>
-            This is the whole body
+            <SearchBar />
+            <ResultList results={results} />
         </div>
     );
 }
