@@ -19,8 +19,10 @@ export default function ResultItem({item, setDetails}) {
 
     return (
         <div className={styles.card}>
-            <h2>{item.title}</h2>
-            <img src={item.image} alt={item.title}/>
+            <div className={styles.title}>
+                <p>{item.title}</p>
+            </div>
+            <img className={styles.image} src={item.image} alt={item.title}/>
             <div><button
                 className={styles.button}
                 onClick={(e)=>handleClick(e)}
