@@ -6,19 +6,18 @@ import Details from "./Main/Details.jsx";
 
 export default function Main() {
     const [results, setResults] = useState([]);
-    const [details, setDetails] = useState([]);
-
+    const [detailId, setDetailId] = useState("");
     return (
         <div className={styles.main}>
             <SearchBar setResults={setResults} />
             <div className={styles.container}>
                 <div className={styles.item}>
                     {
-                        <ResultList recipes={results} setDetails={setDetails} />
+                        <ResultList recipes={results} setDetailId={setDetailId} />
                     }
                 </div>
                 <div className={styles.item}>
-                    <Details details={details} />
+                    <Details detail={detailId} />
                 </div>
             </div>
         </div>

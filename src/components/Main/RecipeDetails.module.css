@@ -1,0 +1,60 @@
+.container {}
+
+.imageContainer {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: auto;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    flex-basis: 33%;
+}
+
+.recipeDetails {
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.iconContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.detailsTitle {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+}
+
+.detailsServings {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+}
+
+.detailsTime {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+}
+
+.scores {
+    margin-top: 20px;
+    font-weight: bolder;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.scoresDetail {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+}
+
+.ingredients {}
+
+.instructions {}
+
+.winePairings {}

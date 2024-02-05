@@ -1,13 +1,12 @@
 import styles from './Details.module.css';
 import RecipeDetails from "./RecipeDetails.jsx";
 
-export default function Details({details}) {
+export default function Details({detail}) {
     return (
         <div className={styles.main}>
-            {details.length}
             {
-                (details.length > 0) ?
-                    <RecipeDetails recipe={details} /> : "No recipe selected"
+                (detail !== "") ?
+                    <RecipeDetails recipe={detail} /> : "No recipe selected"
             }
         </div>
     );
